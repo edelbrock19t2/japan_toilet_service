@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "tinyUrl")
+@Table(name = "tinyurl")
 public class TinyUrl {
 
     @Id
@@ -19,8 +19,8 @@ public class TinyUrl {
     @Column(name = "long_url")
     private String fullUrl;
 
-    @Column(name = "tiny_key", nullable = false)
-    private String tinyKey;
+    @Column(name = "tiny_key")
+    private String key;
 
     @Column(name = "count_clicks")
     private Integer count_clicks;
